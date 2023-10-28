@@ -1,0 +1,16 @@
+{
+  "name": "iran-cidr",
+  "module": "worker.js",
+  "type": "module",
+  "scripts": {
+    "start": "bunx wrangler dev worker.js",
+    "publish": "bun build ./worker --outdir ./dist"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "cidr-tools": "^7.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
